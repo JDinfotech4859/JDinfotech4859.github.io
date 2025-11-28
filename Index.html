@@ -1,3 +1,21 @@
+# clone once if not present
+git clone https://github.com/JDinfotech4859/JDinfotech4859.github.io.git
+cd JDinfotech4859.github.io
+
+# single file remove
+git rm index.html
+git commit -m "Remove index.html"
+git push origin main
+
+# or remove all html files
+git rm *.html
+git commit -m "Remove all html files"
+git push origin main
+# restore file from previous commit
+git checkout <commit-hash> -- index.html
+git add index.html
+git commit -m "Restore index.html from <commit-hash>"
+git push
 <!DOCTYPE html>
 <html lang="en">
 <head>
